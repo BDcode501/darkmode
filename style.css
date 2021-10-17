@@ -1,0 +1,154 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.overley{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+}
+.navbar{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: 35px auto;
+}
+.logo{
+    flex-basis: 15%;
+}
+.logo img{
+    width: 120px;
+    cursor: pointer;
+}
+nav{
+    position: relative;
+    margin: 10px auto 0;
+    right: -100%;
+    width: 590px;
+    height: 50px;
+    background: #fff;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 #000;
+
+}
+nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: #ff0040;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+a:nth-child(1){
+    width: 100px;
+}
+nav .start-home,a :nth-child(1):hover~.animation{
+    width: 100px;
+    left: 0;
+}
+a:hover{
+    color: #fff;
+    transition: all .5s ease 0s;
+}
+a:nth-child(2){
+    width: 110px;
+}
+nav a:nth-child(2):hover~.animation{
+    background: #000;
+    width: 110px;
+    left: 100px;
+}
+a:nth-child(3){
+    width: 100px;
+}
+nav a:nth-child(3):hover~.animation{
+    background: rgb(255, 123, 0);
+    width: 100px;
+    left: 210px;
+}
+a:nth-child(4){
+    width: 160px;
+}
+nav a:nth-child(4):hover~.animation{
+    background: rgb(0, 89, 255);
+    width: 160px;
+    left: 310px;
+}
+a:nth-child(5){
+    width: 120px;
+}
+nav a:nth-child(5):hover~.animation{
+    background: rgb(153, 0, 255);
+    width: 120px;
+    left: 470px;
+}
+.content{
+    width: 60%;
+    margin: 140px auto 0;
+    text-align: center;
+    color: #000;
+}
+.content h1{
+    font-size: 60px;
+}
+.content h3{
+    width: 80%;
+    margin: 20px auto 40px;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid rgb(255,0,76);
+    background: rgb(255,0,76);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+.btn-2{
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+.btn-2:hover{
+    background: #fd7250;
+    border: 2px solid #fd7250;
+    color: #000;
+    
+}
+.dark{
+    flex-basis: 15%;
+}
+.dark img{
+    padding-top: 8%;
+    padding-left: 125%;
+    width: 30px;
+    cursor: pointer;
+}
